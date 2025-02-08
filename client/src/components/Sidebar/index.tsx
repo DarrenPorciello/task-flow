@@ -133,9 +133,6 @@ const SidebarLink = ({href, icon: Icon, label}:
     SidebarLinkProps) => {
         const pathname = usePathname();
         const isActive = pathname === href || (pathname === "/" && href === "/dashboard");
-
-
-
           return (
             <Link href={href} className="w-full">
             <div
